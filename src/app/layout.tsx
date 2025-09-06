@@ -23,10 +23,10 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
-          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
-        )}
       </body>
+      {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
+      )}
     </html>
   );
 }
